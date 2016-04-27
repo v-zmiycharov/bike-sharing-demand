@@ -4,15 +4,22 @@ import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.TimeZone;
 
 public class DateHelper {
-	private static final DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 	
 	public static String formatDate(Date date) {
-		return dateFormat.format(date);
+		return getDateFormat().format(date);
 	}
 
 	public static Date getDate(String source) throws ParseException {
-		return dateFormat.parse(source);
+		return getDateFormat().parse(source);
+	}
+	
+	private static DateFormat getDateFormat() {
+		DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		dateFormat.setTimeZone(TimeZone.getTimeZone("GMT"));
+		
+		return dateFormat;
 	}
 }

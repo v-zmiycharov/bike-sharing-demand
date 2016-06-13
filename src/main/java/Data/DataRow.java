@@ -2,8 +2,6 @@ package Data;
 
 import java.util.Date;
 
-import Enums.Season;
-import Enums.Weather;
 import Utils.DateHelper;
 
 public class DataRow {

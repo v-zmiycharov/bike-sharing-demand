@@ -1,10 +1,10 @@
 @relation train
 
-@attribute weekday {1, 2, 3, 4, 5, 6, 7}
-@attribute month {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}
-@attribute day {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31}
-@attribute year {2011, 2012}
-@attribute hour {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23}
+@attribute weekday integer
+@attribute month integer
+@attribute day integer
+@attribute year integer
+@attribute hour integer
 @attribute season {1, 2, 3, 4}
 @attribute holiday {0, 1}
 @attribute workingday {0, 1}

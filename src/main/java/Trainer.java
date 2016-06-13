@@ -6,15 +6,11 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.ObjectInputStream;
 
-import Data.DataRow;
 import Utils.Constants;
-import Utils.Globals;
 import weka.classifiers.Classifier;
-import weka.classifiers.functions.LibSVM;
 import weka.classifiers.functions.MultilayerPerceptron;
 import weka.core.Instance;
 import weka.core.Instances;
-import weka.core.SelectedTag;
 
 public class Trainer {
 	public static Instances TrainInstances;

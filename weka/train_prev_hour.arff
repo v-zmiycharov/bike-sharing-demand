@@ -13,19 +13,19 @@
 @attribute atemp real
 @attribute humidity real
 @attribute windspeed real
-@attribute prev_weekday integer
-@attribute prev_month integer
-@attribute prev_day integer
-@attribute prev_year integer
-@attribute prev_hour integer
-@attribute prev_season {1, 2, 3, 4}
-@attribute prev_holiday {0, 1}
-@attribute prev_workingday {0, 1}
-@attribute prev_weather {1, 2, 3, 4}
-@attribute prev_temp real
-@attribute prev_atemp real
-@attribute prev_humidity real
-@attribute prev_windspeed real
+@attribute prev_hour_weekday integer
+@attribute prev_hour_month integer
+@attribute prev_hour_day integer
+@attribute prev_hour_year integer
+@attribute prev_hour_hour integer
+@attribute prev_hour_season {1, 2, 3, 4}
+@attribute prev_hour_holiday {0, 1}
+@attribute prev_hour_workingday {0, 1}
+@attribute prev_hour_weather {1, 2, 3, 4}
+@attribute prev_hour_temp real
+@attribute prev_hour_atemp real
+@attribute prev_hour_humidity real
+@attribute prev_hour_windspeed real
 @attribute count numeric
 
 @data

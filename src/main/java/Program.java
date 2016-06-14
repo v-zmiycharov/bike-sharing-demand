@@ -1,8 +1,14 @@
+import Averages.AveragesHelper;
+import Train.Trainer;
+
 public class Program {
 
 	public static void main(String[] args) throws Exception {
 		System.out.println("Set train instances");
 		Trainer.setTrainInstances();
+
+		System.out.println("Calculate averages");
+		AveragesHelper.setAveragesMap();
 
 		System.out.println("Generate classifier");
 		Trainer.generateClassifier();

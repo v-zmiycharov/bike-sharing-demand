@@ -1,3 +1,4 @@
+package Train;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -6,6 +7,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.ObjectInputStream;
 
+import Averages.AveragesHelper;
 import Utils.Constants;
 import weka.classifiers.Classifier;
 import weka.classifiers.functions.MultilayerPerceptron;
@@ -52,7 +54,11 @@ public class Trainer {
 		   if(count < 0) {
 			   count = 0;
 		   }
-		   TestInstances.instance(i).setClassValue(count);
+		   
+		   double averageForMonth = AveragesHelper.getAverage(TestInstances.instance(i));
+		   
+		   int result = (int)(0.5 * count + 0.5 * averageForMonth);
+		   TestInstances.instance(i).setClassValue(result);
 		}
 	}
 	

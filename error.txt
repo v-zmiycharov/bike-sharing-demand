@@ -9,3 +9,4 @@ result - 2: 0.49321 (1459 place)
 
 with fixing the wind speed:  0.49283 (1451 place)
 separate training for casual, registered and both: 0.48549 (1345 place), averaging only for registered seems to work best
+training through weka gives better results: 0.48365 (1298 place) Same algorithm sleected, but generates different models. WHY? 

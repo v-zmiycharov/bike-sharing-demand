@@ -10,11 +10,19 @@ public class Fixer {
 	private static final int WIND_NUM_PREV = 25;
 
 	public static void fixBrokenData(boolean trainingData) {
-		Instances instances = trainingData ? Trainer.TrainInstances : Trainer.TestInstances;
+		if (trainingData) {
+			fixInstance(Trainer.trainInstances, WIND_NUM);
+			fixInstance(Trainer.trainInstances, WIND_NUM_PREV);
 
-		fixInstance(instances, WIND_NUM);
+			fixInstance(Trainer.trainInstancesCasual, WIND_NUM);
+			fixInstance(Trainer.trainInstancesCasual, WIND_NUM_PREV);
 
-		fixInstance(instances, WIND_NUM_PREV);
+			fixInstance(Trainer.trainInstancesRegistered, WIND_NUM);
+			fixInstance(Trainer.trainInstancesRegistered, WIND_NUM_PREV);
+		} else {
+			fixInstance(Trainer.testInstances, WIND_NUM);
+			fixInstance(Trainer.testInstances, WIND_NUM_PREV);
+		}
 	}
 
 	private static void fixInstance(Instances instances, int attributeNumber) {

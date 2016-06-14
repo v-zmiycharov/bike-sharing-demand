@@ -1,4 +1,4 @@
-Initial: 
+Initial: 0.85901 (2688 place) 
 After prev day: 0.55981 (2085 place)
 0.9 * w1 + 0.1 * w2: 0.52045 (1888 place)
 0.8 * w1 + 0.2 * w2: 0.51046 (1808 place)

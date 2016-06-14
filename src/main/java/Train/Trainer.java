@@ -57,7 +57,12 @@ public class Trainer {
 		   
 		   double averageForMonth = AveragesHelper.getAverage(TestInstances.instance(i));
 		   
-		   int result = (int)(0.5 * count + 0.5 * averageForMonth);
+		   int result = (int)(0.6 * count + 0.4 * averageForMonth);
+		   
+		   if(result >= 2) {
+			   result -= 2;
+		   }
+		   
 		   TestInstances.instance(i).setClassValue(result);
 		}
 	}

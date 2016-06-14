@@ -6,3 +6,5 @@ After prev day: 0.55981 (2085 place)
 0.6 * w1 + 0.4 * w2: 0.50184 (1715 place)
 result - 1: 0.49490 (1498 place)
 result - 2: 0.49321 (1459 place)
+
+with fixing the wind speed:  0.49283 (1451 place)
